@@ -349,7 +349,7 @@ def head(page, title, desc, extra=""):
      Bricolage variable file alongside it made the two compete and pushed LCP
      out, so the display face loads at its normal priority. -->
 <link rel="preload" href="assets/fonts/spectral-400-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/site.css?v=6">
+<link rel="stylesheet" href="assets/site.css?v=7">
 {extra}</head>
 <body>
 

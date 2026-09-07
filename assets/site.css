@@ -313,6 +313,9 @@ a:hover { color: var(--green-hover); }
   color: var(--green);
 }
 
+/* Three optical sizes only. Each distinct opsz/weight pair is a separate
+   variable-font instance to synthesise, and style recalculation was the
+   largest main-thread cost on the page. */
 /* ══ typography ══ */
 .display {
   font-family: var(--font-display); font-variation-settings: "opsz" 96;
@@ -320,12 +323,12 @@ a:hover { color: var(--green-hover); }
   line-height: 1.05; letter-spacing: -0.03em;
 }
 .h-section {
-  font-family: var(--font-display); font-variation-settings: "opsz" 48;
+  font-family: var(--font-display); font-variation-settings: "opsz" 40;
   font-weight: 700; font-size: clamp(25px, 2.9vw, 38px);
   line-height: 1.12; letter-spacing: -0.022em;
 }
 .h-sub {
-  font-family: var(--font-display); font-variation-settings: "opsz" 28;
+  font-family: var(--font-display); font-variation-settings: "opsz" 24;
   font-weight: 700; font-size: clamp(19px, 2vw, 24px);
   line-height: 1.2; letter-spacing: -0.014em;
 }
@@ -402,7 +405,7 @@ a:hover { color: var(--green-hover); }
   width: 34px; height: 34px; color: var(--green);
 }
 .card h2, .card h3 {
-  font-family: var(--font-display); font-variation-settings: "opsz" 28;
+  font-family: var(--font-display); font-variation-settings: "opsz" 24;
   font-weight: 700; font-size: clamp(19px, 1.9vw, 22px); line-height: 1.2;
   letter-spacing: -0.014em;
 }
@@ -575,7 +578,7 @@ a:hover { color: var(--green-hover); }
 .topic dd { order: -1; }
 .topic dt { font-size: 16px; line-height: 24px; color: var(--ink-2); }
 .topic dd {
-  margin: 0; font-family: var(--font-display); font-variation-settings: "opsz" 32;
+  margin: 0; font-family: var(--font-display); font-variation-settings: "opsz" 24;
   font-weight: 800; font-size: 26px; line-height: 1; letter-spacing: -0.02em;
   color: var(--green); font-variant-numeric: tabular-nums;
 }
