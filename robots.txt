@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://stevelouisjean0-byte.github.io/rr-handyman-orlando/sitemap.xml
